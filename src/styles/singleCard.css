@@ -1,0 +1,26 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/c8/dd/b4/c8ddb4a2b9f016bd303184a20025caa8.jpg');
+
+}
+
+.singleCard {
+    background-image: url('https://cdn.wallpapersafari.com/93/56/aTXlrM.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    color: white;
+    padding: 20px;
+}
+
+.title, .description {
+    margin: 10px;
+    text-shadow: rgb(0, 81, 255) 2px 2px 2px;
+}
+
+.singleCard-description {
+    display: block;
+    text-shadow: rgb(183, 0, 255) 1px 0 10px;
+    margin-top: 20px;
+    padding: 20px;
+}

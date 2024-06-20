@@ -1,0 +1,41 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/c8/dd/b4/c8ddb4a2b9f016bd303184a20025caa8.jpg');
+    background-size: cover;
+}
+
+.name-card {
+    font-size: 1.5rem;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(253, 249, 4);
+    margin-top: 45px;
+    margin-bottom: 90px;
+}
+
+.card-characters, .card-vehicles, .card-planets {
+    margin-bottom: 20px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.flip-card-img {
+    object-fit: cover;
+    object-position: top;
+}
+
+.icon-favorites {
+    margin: 10px;
+    background-color: #FFE81F;
+    border: none;
+}
+
+.btn {
+    background-color: #FFE81F;
+}
+
+.icon-favorites:hover {
+    background-color: black;
+    color: #FFE81F;
+    border: none;
+}

@@ -1,0 +1,69 @@
+/* 
+    General Styles
+*/
+
+.button:hover {
+  background-color: black;
+  color: #FFE81F;
+}
+
+.flip-card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card {
+    margin-right: 25px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    perspective: 1000px;  /*Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    /*-webkit-backface-visibility: hidden;  Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: black;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-image: url('https://i.pinimg.com/736x/d8/c9/0d/d8c90d741e629393e2b7261c9c55a2ea.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .flip-card:active .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }

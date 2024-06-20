@@ -1,0 +1,37 @@
+.navbar {
+    background-image: url('https://i.pinimg.com/originals/c8/dd/b4/c8ddb4a2b9f016bd303184a20025caa8.jpg');
+}
+
+.logo {
+    width: 115px;
+    margin-left: 50px;
+}
+
+.favorites {
+    margin-right: 90px;
+}
+
+.favorites-menu, .favorites-menu a {
+    left: -100px !important;
+    background-color: black;
+    color: #FFE81F;
+}
+
+.favorites-menu a:hover {
+    background-color: black;
+    font-size: larger;
+    color: #2B4B72;
+}
+
+.favorites-menu i:hover {
+    cursor: pointer;
+    font-size: larger;
+    color: #680F0A;
+}
+
+@media only screen and (max-width: 600px) {
+    .favorites-menu {
+     left: -100px !important;
+    }
+  }
+ 
